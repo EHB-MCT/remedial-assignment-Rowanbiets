@@ -9,4 +9,45 @@ const getAllResources = async (req, res) => {
   }
 };
 
-module.exports = { getAllResources };
+const buyResource = async (req, res) => {
+  const { name, amount } = req.body;
+
+  if (!name || !amount || amount <= 0) {
+    return res.status(400).json({ message: 'Ongeldige input' });
+  }
+
+  try {
+    const resource = await Resource.findOne({ name });
+
+    if (!resource) {
+      return res.status(404).json({ message: 'Grondstof niet gevonden' });
+    }
+
+    if (resource.supply < amount) {
+      return res.status(400).json({ message: 'Niet genoeg voorraad' });
+    }
+
+    // Pas voorraad en vraag aan
+    resource.supply -= amount;
+    resource.demand += amount;
+
+    // Simpele prijslogica: verhoog prijs een beetje
+    resource.price += Math.ceil(amount * 0.1);
+
+    await resource.save();
+
+    res.json({
+      message: `Je hebt ${amount} ${name} gekocht`,
+      resource,
+    });
+
+  } catch (err) {
+    res.status(500).json({ message: 'Fout bij kopen', error: err.message });
+  }
+};
+
+module.exports = {
+  getAllResources,
+  buyResource,
+};
+
