@@ -22,6 +22,6 @@ app.listen(PORT, () => {
   console.log(`🚀 Server draait op http://localhost:${PORT}`);
 
   // Start simulatie loop (elke 60 sec)
-setInterval(runMarketSimulation, 10 * 1000); // elke minuut
+//setInterval(runMarketSimulation, 60 * 1000); // elke minuut
 
 });
