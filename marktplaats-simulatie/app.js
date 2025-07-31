@@ -1,5 +1,6 @@
 const express = require('express');
 const connectMongo = require('./database/connectMongo');
+const runMarketSimulation = require('./services/simulationService');
 require('dotenv').config();
 
 const app = express();  // <-- app maken vóór gebruik
@@ -19,4 +20,8 @@ const PORT = 3000;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server draait op http://localhost:${PORT}`);
+
+  // Start simulatie loop (elke 60 sec)
+setInterval(runMarketSimulation, 10 * 1000); // elke minuut
+
 });
