@@ -1,4 +1,7 @@
 const express = require('express');
+const cors = require('cors');
+app.use(cors()); // hiermee staat de backend cross-origin requests toe van *alle domeinen
+
 const connectMongo = require('./database/connectMongo');
 const runMarketSimulation = require('./services/simulationService');
 require('dotenv').config();
