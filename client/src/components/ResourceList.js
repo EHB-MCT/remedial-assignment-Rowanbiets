@@ -1,23 +1,40 @@
 import React, { useEffect, useState } from 'react';
-import API from '../api';
+import axios from 'axios';
 
-function ResourceList() {
+const ResourceList = () => {
   const [resources, setResources] = useState([]);
 
+  // Grondstoffen ophalen bij laden
   const fetchResources = async () => {
-    const res = await API.get('/resources');
-    setResources(res.data);
+    try {
+      const res = await axios.get('http://localhost:3000/api/resources');
+      setResources(res.data);
+    } catch (error) {
+      console.error('❌ Fout bij ophalen van grondstoffen:', error);
+    }
   };
 
-  const handleBuy = async (id) => {
-    await API.post(`/resources/${id}/buy`);
+  // Kopen
+const handleBuy = async (resourceName) => {
+  console.log("🛒 Kopen:", resourceName); // 👈 check of dit correct is
+  try {
+    await axios.post('http://localhost:3000/api/buy', { name: resourceName });
     fetchResources();
-  };
+  } catch (error) {
+    console.error('❌ Fout bij kopen:', error);
+  }
+};
 
-  const handleSell = async (id) => {
-    await API.post(`/resources/${id}/sell`);
+const handleSell = async (resourceName) => {
+  console.log("📤 Verkopen:", resourceName);
+  try {
+    await axios.post('http://localhost:3000/api/sell', { name: resourceName });
     fetchResources();
-  };
+  } catch (error) {
+    console.error('❌ Fout bij verkopen:', error);
+  }
+};
+
 
   useEffect(() => {
     fetchResources();
@@ -25,17 +42,29 @@ function ResourceList() {
 
   return (
     <div>
-      <h2>Marktplaats</h2>
-      {resources.map((r) => (
-        <div key={r._id} style={{ marginBottom: '10px' }}>
-          <strong>{r.name}</strong> - Prijs: {r.price} - Vraag: {r.demand} - Aanbod: {r.supply}
-          <br />
-          <button onClick={() => handleBuy(r._id)}>Koop</button>
-          <button onClick={() => handleSell(r._id)}>Verkoop</button>
-        </div>
-      ))}
+      <h2>📦 Grondstoffen</h2>
+      {resources.length === 0 ? (
+        <p>⏳ Bezig met laden...</p>
+      ) : (
+        <ul>
+          {resources.map((res) => (
+            <li key={res._id} style={{ marginBottom: '1rem' }}>
+              <strong>{res.name}</strong> — 💰 €{res.price}
+              <br />
+              📈 Vraag: {res.demand} | 📦 Aanbod: {res.supply}
+              <br />
+              <button onClick={() => handleBuy(res.name)} style={{ marginRight: '8px' }}>
+                Kopen
+              </button>
+              <button onClick={() => handleSell(res.name)}>
+                Verkopen
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
-}
+};
 
 export default ResourceList;
