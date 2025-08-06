@@ -1,30 +1,25 @@
 const express = require('express');
 const cors = require('cors');
-app.use(cors()); // hiermee staat de backend cross-origin requests toe van *alle domeinen
-
 const connectMongo = require('./database/connectMongo');
 const runMarketSimulation = require('./services/simulationService');
 require('dotenv').config();
 
-const app = express();  // <-- app maken vóór gebruik
+const app = express(); 
 
-const marketRoutes = require('./routes/marketRoutes');
-
-// Middleware
+app.use(cors());      
 app.use(express.json());
 
-// Routes gebruiken
+const marketRoutes = require('./routes/marketRoutes');
 app.use('/api', marketRoutes);
 
 // Connect database
 connectMongo();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server draait op http://localhost:${PORT}`);
 
-  // Start simulatie loop (elke 60 sec)
-//setInterval(runMarketSimulation, 60 * 1000); // elke minuut
-
+  // Start simulatie loop
+  // setInterval(runMarketSimulation, 60 * 1000); // elke minuut
 });
