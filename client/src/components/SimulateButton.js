@@ -1,4 +1,3 @@
-import React from 'react';
 import API from '../api';
 
 function SimulateButton({ onSimulate }) {

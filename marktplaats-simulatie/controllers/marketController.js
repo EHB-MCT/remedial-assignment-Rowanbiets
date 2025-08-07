@@ -10,6 +10,8 @@ const getAllResources = async (req, res) => {
 };
 
 const buyResource = async (req, res) => {
+  console.log("Ontvangen body:", req.body);
+
   const { name, amount } = req.body;
 
   if (!name || !amount || amount <= 0) {

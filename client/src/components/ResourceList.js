@@ -16,24 +16,27 @@ const ResourceList = () => {
 
   // Kopen
 const handleBuy = async (resourceName) => {
-  console.log("🛒 Kopen:", resourceName); // 👈 check of dit correct is
+  console.log("🛒 Kopen:", resourceName);
   try {
-    await axios.post('http://localhost:3000/api/buy', { name: resourceName });
+    await axios.post('http://localhost:3000/api/buy', { name: resourceName, amount: 1 });
     fetchResources();
   } catch (error) {
     console.error('❌ Fout bij kopen:', error);
   }
 };
 
+
 const handleSell = async (resourceName) => {
   console.log("📤 Verkopen:", resourceName);
   try {
-    await axios.post('http://localhost:3000/api/sell', { name: resourceName });
+    await axios.post('http://localhost:3000/api/sell', { name: resourceName, amount: 1 });
     fetchResources();
   } catch (error) {
     console.error('❌ Fout bij verkopen:', error);
   }
 };
+
+
 
 
   useEffect(() => {
