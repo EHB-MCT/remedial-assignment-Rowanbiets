@@ -21,7 +21,7 @@ const seedResources = async () => {
   ];
 
   try {
-    await Resource.deleteMany(); 
+    await Resource.deleteMany(); // leeg eerst de collectie
     await Resource.insertMany(resources);
     console.log('🌱 Resources succesvol toegevoegd!');
   } catch (err) {
