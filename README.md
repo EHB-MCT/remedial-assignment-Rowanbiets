@@ -178,9 +178,8 @@ Wees respectvol en professioneel in bijdragen en communicatie.
 
 ## 🖼️ Visuals
 
-(Voeg hier screenshots of diagrammen toe om je app te illustreren)
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/5e49ad95-bcd2-4ccd-8624-8832e3a37a07" />
 
-![Voorbeeld screenshot](./docs/screenshot-1.png)
 
 ---
 
