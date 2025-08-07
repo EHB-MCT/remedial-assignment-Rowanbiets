@@ -182,7 +182,8 @@ Wees respectvol en professioneel in bijdragen en communicatie.
 
 ## 🖼️ Visuals
 
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/5e49ad95-bcd2-4ccd-8624-8832e3a37a07" />
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/0e1395f2-e8cd-47f8-b683-4985c56232d5" />
+
 
 
 ---
