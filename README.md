@@ -86,15 +86,19 @@ npm start
 
 ```bash
 /controllers
-  marketController.js      # API logica (kopen, verkopen, ophalen resources)
+ marketController.js      # API logica (kopen, verkopen, ophalen resources)
+/tests
+  marketController.test.js      # Test controller
+/database
+connectMongo.js             # connectie met database
 /models
   Resource.js              # Mongoose model grondstof
 /routes
   marketRoutes.js          # API routes
 /services
   simulationService.js     # Markt simulatie logica
-/seed
-  seedResources.js         # Seeder script
+/tools
+  initResources.js         # Seeder script
 /app.js                    # Server entrypoint
 /frontend                  # React frontend code
 ```
