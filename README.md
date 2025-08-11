@@ -176,9 +176,6 @@ MIT License © 2025 Rowan Biets
 
 Zie `LICENSE` bestand voor details.
 
-## 🤝 Code of Conduct
-
-Wees respectvol en professioneel in bijdragen en communicatie.
 
 ## 🖼️ Visuals
 
@@ -186,8 +183,9 @@ Wees respectvol en professioneel in bijdragen en communicatie.
 
 
 
+## Author
+- Rowan Biets
 ---
 
-Bedankt voor het gebruiken van dit project! 🎉  
-Heb je vragen? Open een issue of stuur een bericht.
+
 
