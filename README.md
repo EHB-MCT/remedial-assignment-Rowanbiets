@@ -182,6 +182,52 @@ Zie `LICENSE` bestand voor details.
 <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/0e1395f2-e8cd-47f8-b683-4985c56232d5" />
 
 
+# 📚 Resources voor Marktplaats Simulatie
+
+## 🛠️ Tools & Technologieën
+
+### Node.js & Express
+- [Node.js Official Documentation](https://nodejs.org/en/docs/)  
+- [Express.js Official Documentation](https://expressjs.com/en/starter/installing.html)  
+- [Express.js Crash Course (YouTube)](https://www.youtube.com/watch?v=L72fhGm1tfE)  
+
+### MongoDB & Mongoose
+- [MongoDB Documentation](https://docs.mongodb.com/)  
+- [Mongoose Documentation](https://mongoosejs.com/docs/guide.html)  
+- [Mongoose Tutorial - FreeCodeCamp](https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/)  
+
+### React
+- [React Official Documentation](https://reactjs.org/docs/getting-started.html)  
+- [React Tutorial](https://reactjs.org/tutorial/tutorial.html)  
+- [Create React App Documentation](https://create-react-app.dev/docs/getting-started/)  
+
+### Testing: Jest & Supertest
+- [Jest Documentation](https://jestjs.io/docs/getting-started)  
+- [Supertest NPM Package](https://www.npmjs.com/package/supertest)  
+- [API Testing met Jest & Supertest (Tutorial)](https://dev.to/nedsoft/testing-nodejs-express-api-with-jest-and-supertest-5c1o)  
+
+### Environment Variables: dotenv
+- [dotenv NPM Package](https://www.npmjs.com/package/dotenv)  
+- [dotenv Tutorial](https://zellwk.com/blog/dotenv/)  
+
+## 📈 Markt Simulatie & Economie
+
+- [Simuleren van markten (artikel)](https://towardsdatascience.com/simulating-markets-with-python-1f4f8de54e1c)  
+- [Basisprincipes van vraag en aanbod (Investopedia)](https://www.investopedia.com/terms/s/supply-and-demand.asp)  
+
+## 🧑‍💻 Best Practices & Architectuur
+
+- [SOLID Principles in OOP](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)  
+- [Node.js Project Structuring Tips](https://dev.to/nedsoft/structuring-nodejs-projects-14kc)  
+
+## Chatgpt
+https://chatgpt.com/share/689a4ced-8588-8002-aeae-95c16831249f - Hoe schrijf ik een REST API endpoint in Express om grondstoffen te kopen?
+
+https://chatgpt.com/share/689a4de4-70a0-8002-bd89-052980aedd13 - Welke design patterns zijn geschikt voor een markt simulatie backend?
+
+https://chatgpt.com/share/689a4e6e-77ec-8002-8c2b-14199a16ce20 - Wat zijn SOLID principes en hoe kan ik die toepassen in mijn Node.js code?
+
+https://chatgpt.com/share/689a4ea2-0f30-8002-8b35-10537b52aee8 - hoe merge ik van een develop branch naar de main branch ? 
 
 ## Author
 - Rowan Biets
