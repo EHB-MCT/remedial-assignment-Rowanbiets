@@ -204,21 +204,15 @@ Zie `LICENSE` bestand voor details.
 ### Testing: Jest & Supertest
 - [Jest Documentation](https://jestjs.io/docs/getting-started)  
 - [Supertest NPM Package](https://www.npmjs.com/package/supertest)  
-- [API Testing met Jest & Supertest (Tutorial)](https://dev.to/nedsoft/testing-nodejs-express-api-with-jest-and-supertest-5c1o)  
+ 
 
 ### Environment Variables: dotenv
 - [dotenv NPM Package](https://www.npmjs.com/package/dotenv)  
-- [dotenv Tutorial](https://zellwk.com/blog/dotenv/)  
 
-## 📈 Markt Simulatie & Economie
-
-- [Simuleren van markten (artikel)](https://towardsdatascience.com/simulating-markets-with-python-1f4f8de54e1c)  
-- [Basisprincipes van vraag en aanbod (Investopedia)](https://www.investopedia.com/terms/s/supply-and-demand.asp)  
 
 ## 🧑‍💻 Best Practices & Architectuur
 
 - [SOLID Principles in OOP](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)  
-- [Node.js Project Structuring Tips](https://dev.to/nedsoft/structuring-nodejs-projects-14kc)  
 
 ## Chatgpt
 https://chatgpt.com/share/689a4ced-8588-8002-aeae-95c16831249f - Hoe schrijf ik een REST API endpoint in Express om grondstoffen te kopen?
