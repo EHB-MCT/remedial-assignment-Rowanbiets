@@ -164,11 +164,6 @@ Tests:       5 passed, 5 total
 - Aangename achtergrond met subtle gradient voor sfeer
 - Responsieve tabel met actieknoppen voor kopen/verkopen
 
-## 📖 Changelog
-
-| Versie | Datum       | Wijziging                                               |
-|--------|-------------|----------------------------------------------------------|
-| 1.0.0  | 2025-08-07  | Eerste werkende versie met API, frontend, simulatie en tests |
 
 ## 📜 Licentie
 
