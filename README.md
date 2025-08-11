@@ -158,6 +158,20 @@ Tests:       5 passed, 5 total
 - Gebruik `develop` branch voor integratie en testing
 - Merge naar `main` als stabiel en gereed voor productie
 
+
+## 📚 Git Workflow
+- **`main`**: Contains the stable version of the project.
+- **`develop`**: Main development branch.
+- **`tests`**: Branch for tests.
+- **`feature/<feature-name>`**: Branch for new features.
+
+## 📚 Commit Message Conventions
+Follow the [Conventional Commits](https://www.conventionalcommits.org/) standard:
+- `feat`: Introduces a new feature.
+- `add`: adding extras to the project.
+- `fix`: Fixes a bug.
+- `chore`: Updates to configuration files, documentation, or other non-code elements.
+
 ## 🎨 UI Styling
 
 - Basic maar cleane CSS styling
