@@ -158,17 +158,26 @@ Tests:       5 passed, 5 total
 - Gebruik `develop` branch voor integratie en testing
 - Merge naar `main` als stabiel en gereed voor productie
 
+
+## 📚 Git Workflow
+- **`main`**: Contains the stable version of the project.
+- **`develop`**: Main development branch.
+- **`tests`**: Branch for tests.
+- **`feature/<feature-name>`**: Branch for new features.
+
+## 📚 Commit Message Conventions
+Follow the [Conventional Commits](https://www.conventionalcommits.org/) standard:
+- `feat`: Introduces a new feature.
+- `add`: adding extras to the project.
+- `fix`: Fixes a bug.
+- `chore`: Updates to configuration files, documentation, or other non-code elements.
+
 ## 🎨 UI Styling
 
 - Basic maar cleane CSS styling
 - Aangename achtergrond met subtle gradient voor sfeer
 - Responsieve tabel met actieknoppen voor kopen/verkopen
 
-## 📖 Changelog
-
-| Versie | Datum       | Wijziging                                               |
-|--------|-------------|----------------------------------------------------------|
-| 1.0.0  | 2025-08-07  | Eerste werkende versie met API, frontend, simulatie en tests |
 
 ## 📜 Licentie
 
@@ -176,18 +185,56 @@ MIT License © 2025 Rowan Biets
 
 Zie `LICENSE` bestand voor details.
 
-## 🤝 Code of Conduct
-
-Wees respectvol en professioneel in bijdragen en communicatie.
 
 ## 🖼️ Visuals
 
 <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/0e1395f2-e8cd-47f8-b683-4985c56232d5" />
 
 
+# 📚 Resources voor Marktplaats Simulatie
 
+## 🛠️ Tools & Technologieën
+
+### Node.js & Express
+- [Node.js Official Documentation](https://nodejs.org/en/docs/)  
+- [Express.js Official Documentation](https://expressjs.com/en/starter/installing.html)  
+- [Express.js Crash Course (YouTube)](https://www.youtube.com/watch?v=L72fhGm1tfE)  
+
+### MongoDB & Mongoose
+- [MongoDB Documentation](https://docs.mongodb.com/)  
+- [Mongoose Documentation](https://mongoosejs.com/docs/guide.html)  
+- [Mongoose Tutorial - FreeCodeCamp](https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/)  
+
+### React
+- [React Official Documentation](https://reactjs.org/docs/getting-started.html)  
+- [React Tutorial](https://reactjs.org/tutorial/tutorial.html)  
+- [Create React App Documentation](https://create-react-app.dev/docs/getting-started/)  
+
+### Testing: Jest & Supertest
+- [Jest Documentation](https://jestjs.io/docs/getting-started)  
+- [Supertest NPM Package](https://www.npmjs.com/package/supertest)  
+ 
+
+### Environment Variables: dotenv
+- [dotenv NPM Package](https://www.npmjs.com/package/dotenv)  
+
+
+## 🧑‍💻 Best Practices & Architectuur
+
+- [SOLID Principles in OOP](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)  
+
+## Chatgpt
+https://chatgpt.com/share/689a4ced-8588-8002-aeae-95c16831249f - Hoe schrijf ik een REST API endpoint in Express om grondstoffen te kopen?
+
+https://chatgpt.com/share/689a4de4-70a0-8002-bd89-052980aedd13 - Welke design patterns zijn geschikt voor een markt simulatie backend?
+
+https://chatgpt.com/share/689a4e6e-77ec-8002-8c2b-14199a16ce20 - Wat zijn SOLID principes en hoe kan ik die toepassen in mijn Node.js code?
+
+https://chatgpt.com/share/689a4ea2-0f30-8002-8b35-10537b52aee8 - hoe merge ik van een develop branch naar de main branch ? 
+
+## Author
+- Rowan Biets
 ---
 
-Bedankt voor het gebruiken van dit project! 🎉  
-Heb je vragen? Open een issue of stuur een bericht.
+
 
